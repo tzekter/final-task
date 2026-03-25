@@ -18,4 +18,4 @@ class LoginPage extends BasePage{
         await this.loginForm.btnLogin.click();
     }
 }
-module.exports= LoginPage;
+module.exports= new LoginPage();

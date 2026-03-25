@@ -1,7 +1,10 @@
 const BaseComponent=require('../common/base.component');
+const HeaderComponent=require('../common/header.component')
+
 class InventoryComponent extends BaseComponent{
     constructor(){
         super('.inventory_list');
+        this.header=new HeaderComponent();
     }
     get btnCart(){
         return $('.shopping_cart_link');
